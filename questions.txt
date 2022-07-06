@@ -1,0 +1,53 @@
+Javascript:
+
+1. What is your favorite new javascript feature and why?
+- The last one that was released last month with ECMAScript 2022 was that I can use await without async function on the top level
+
+
+2. Explain an interesting way in which you have used this javascript feature.
+- I didn't used that yet :D though thats obvious just need to call the function without anonymous functions which will make life more easy 
+
+
+3. Is there any difference between regular function syntax and the shorter arrow function syntax? (Write the answer in your own words)
+- yeah for sure there is, the most important is "this" binding which made things more straight forward, plus its short written helping you have easier returns than in normal function case
+
+4. What is the difference between ‘myFunctionCall(++foo)’   and  ‘myFunctionCall(foo++)’
+- ++foo returns the value after incrementing add +1 to the value and foo++  will return the value before incrementing so same value
+
+5. In your own words, explain what a javascript ‘class’ is and how it differs from a function.
+- both of them are objects if we look underneath so class especially is not as in other programming languages, it has a prototype and a constructor wheres the function doesn't also classes has extensions which function doesn't 
+
+
+Css:
+
+1. In your own words, explain css specificity.
+- Its the importance of which css style will be applied to the element. The order is first applies inline code on the html element, second will take the parental reference which has more specificity specify the nesting, though nesting can be overwritten by adding !Important attribute.
+
+
+2. In your own words, explain, what is ‘!important’ in css.  Also how does it work?  Are there any special circumstances when using it, where it’s behavior might not be what you expect?
+- !important as told above is overwriting the specificity in case of parental nesting to take the style and ignore the other ones which had more prio to apply the style. I personally avoid the usage of it as it means that structure of css code is written wrongly so better to fix the specificity than just use it.
+
+3. What is your preferred layout system: inline-block, floating + clearing, flex, grid, other?  And why?
+- I was using the inline-block, floating + clearing before the grid css started to be used by all major browsers though now I use grids because it has all that is needed. Grids Im using only on structural level as its helps for having proper responsibility. 
+
+4. Are negative margins legal and what do they do (margin: -20px)?
+- yeah its legal, but not preferred its kind of weird to use it and Im not using that only for special occasions.
+
+5. If a <div/> has no margin or other styling and a <p/> tag inside of it has a margin top of some kind, the margin from the <p/> tag will show up on the div instead (the margin will show above the div not inside of it), why is this?  What are the different things that can be done to prevent it?
+- thats because 2 block elements and inside of <div> element theres no other element that <p> tag can push himself, and that case they attaching one another causing that issue the easiest fix is to use .clearfix class (commonly existing in all libs) which is adding before and after elements inside <div/> and <p> tag is already pushing the margin from in this case before element
+
+Unit tests:
+
+1. What technologies do you use to unit test your react components?
+- Im using Jest lib which is the most popular lib for now
+
+2. Are there any pitfalls associated with this technology that have caused you difficulty in the past?
+- Mocking is sometimes too hard to accomplish especially if theres a lib that is expecting a behavior and theres no any exact readme how to do it
+
+3. How do you test in your unit tests to see if the correct properties are being passed to child components.
+- First way is to just check if that elements are printed properly in UI by receiving the data like to see if the button is existing in UI if condition is passed to display, another is mocking the child component and expecting that it is called with proper props (expect().toHaveBeenCalledWith()) 
+
+
+
+
+
